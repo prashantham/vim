@@ -19,6 +19,7 @@ set autoread " Reload files changed outside vim
 set showcmd                     " Show incomplete cmds down the bottom
 set ttyfast " Send more characters for redraws
 
+set clipboard=unnamed "enable clip board access
 
 "leave hidden buffers open
 set hidden
@@ -47,6 +48,10 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
+
+set backupdir=/tmp
+set directory=/tmp
+set undodir=/tmp
 
 nmap <leader>l :set list!<CR> "highlight invisble char
 nmap <leader>n :NERDTree<CR>
